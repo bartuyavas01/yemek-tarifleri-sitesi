@@ -1,0 +1,262 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* color */
+:root {
+    --body-color: #f9f9f9;
+    --nav-color: #ff5733;
+    --orange: #ff3d00;
+    --white: #fff;
+    --black: #333;
+    --green: #347928;
+}
+
+/* scrollbar */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--body-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--nav-color);
+}
+
+/* base */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* header */
+header {
+    background-color: var(--nav-color);
+    text-align: center;
+    padding: 10px 20px 16px;
+}
+
+header h1 {
+    margin-bottom: 4px;
+    color: var(--white);
+    font-size: 27px;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: var(--white);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* search */
+.search-container {
+    min-width: 800px;
+    margin: 35px auto 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-container input[type="text"] {
+    padding: 15px;
+    width: 35%;
+    border-radius: 30px 0 0 30px;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-container button {
+    padding: 15px 27.5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--nav-color);
+    border: none;
+    outline: none;
+    border-radius: 0 30px 30px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: var(--orange);
+    transition: 400ms all;
+}
+
+/* hero */
+.hero {
+    background-image: url(img/ana.jpg);
+    background-size: cover;
+    background-position: bottom;
+    color: var(--white);
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* genel-stil */
+h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.meat-dishes-area,
+.dessert-recipes-area,
+.favorite-dishes-area,
+.soup-recipes-area {
+    max-width: 1200px;
+    margin: 20px auto;
+    margin-top: 35px;
+    position: relative;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: calc(33.333% - 20px);
+    background-color: var(--white);
+    border-radius: 7.5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 20px;
+    padding-bottom: 22px;
+    margin-bottom: 20px;
+    position: relative;
+    flex-direction: column;
+}
+
+.menu-item:hover {
+    transition: 400ms all;
+    transform: scale(1.01);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 7.5px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    height: 30px;
+    overflow: hidden;
+}
+
+.menu-item p {
+    font-size: 15px;
+    margin-bottom: 14px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.menu-item span {
+    display: block;
+    font-weight: bold;
+    color: var(--green);
+    margin-bottom: 12px;
+}
+
+.favorite-title h2 {
+    margin-bottom: 15px !important;
+}
+
+.tag {
+    background-color: var(--nav-color);
+    color: var(--white) !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    font-size: 10px;
+    top: -12px;
+    right: -12px;
+}
+
+/* button-full */
+.button {
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    background-color: var(--nav-color);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none !important;
+}
+
+.button:hover {
+    background-color: var(--orange);
+    transition: 0.9s all;
+}
+
+/* footer */
+footer {
+    font-size: 11px;
+    font-weight: bold;
+    background-color: var(--nav-color);
+    color: var(--white);
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
